@@ -1,0 +1,4 @@
+Ausgangsmaterial: neun vom Benutzer bereitgestellte Jupyter-Notebooks und zwei Vorlesungsbilder.
+Eine vollständige PDF-Datei wurde nicht bereitgestellt.
+Das Modell enthält die in den genannten Quellen erkennbaren Begriffe und Parameter.
+Die Originaldateien wurden nicht verändert und sind in diesem neu erstellten Archiv nicht enthalten.

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>%%NUMMER%% · %%TITEL%% – CFD-Präsentation</title>
+  <link rel="stylesheet" href="/assets/stil.css">
+</head>
+<body data-seite="%%NUMMER%%">
+  <main class="darstellungsseite">
+    <header class="kopfzeile">
+      <a class="zurueck" href="/">‹ Alle sechs Seiten</a>
+      <span class="seitennummer">Präsentationsseite %%NUMMER%% von 6</span>
+    </header>
+    <div class="titelbereich">
+      <p class="uebertitel">Rückwärtsgerichtete Stufe · CFD</p>
+      <h1>%%NUMMER%%. %%TITEL%%</h1>
+      <p class="untertitel">%%ERKLAERUNG%%</p>
+    </div>
+    <section class="abbildungsrahmen" aria-label="Animierte Strömungsdarstellung">
+      <img id="livebild" alt="Live berechnete CFD-Darstellung: %%TITEL%%" width="1342" height="512">
+      <div class="ladehinweis" id="ladehinweis" role="status">Strömungsfeld wird berechnet …</div>
+    </section>
+    <section class="steuerungsleiste" aria-label="Animationssteuerung">
+      <div class="reglerblock">
+        <label for="hoehe">Stufenhöhe <em>h</em> <strong id="hoehetext">1,0</strong></label>
+        <input id="hoehe" type="range" min="0.3" max="1.5" step="0.1" value="1.0">
+        <div class="reglerskala"><span>0,3</span><span>1,5</span></div>
+      </div>
+      <div class="knopfgruppe">
+        <button id="pause" type="button">Pause</button>
+        <button id="neustart" type="button" class="sekundaer">Neu starten</button>
+        <button id="vollbild" type="button" class="sekundaer">Vollbild</button>
+      </div>
+    </section>
+    <p id="status" class="statuszeile" aria-live="polite">Die zeitabhängige Simulation wird gestartet.</p>
+    <p class="infozeile">Bei jeder Änderung von <em>h</em> werden die Geometrie und die Druck-Poisson-Matrix neu aufgebaut. Die Simulationszeit beginnt wieder bei null.</p>
+    <nav class="seitennavigation" aria-label="Präsentationsnavigation">
+      <a href="/seite/%%VORHERIGE%%">← Vorherige Seite</a>
+      <a href="/">Startseite</a>
+      <a href="/seite/%%NAECHSTE%%">Nächste Seite →</a>
+    </nav>
+  </main>
+  <script src="/assets/steuerung.js" defer></script>
+</body>
+</html>
